@@ -5,7 +5,8 @@
   <img [src]="imgUrl" (click)="OnClick($event)"  alt="The Bridgelabz Logo : a brige to employment through a lab works" />
 </div>
 <div>
-  <input [(ngModel)]="userString" /> <br/><br/>
+  <input (input)="onInput($event)" [(ngModel)]="userString" /> <br/><br/>
+  <span class="error-output">{{this.nameError}}</span>
 </div>
 
 <router-outlet></router-outlet>
