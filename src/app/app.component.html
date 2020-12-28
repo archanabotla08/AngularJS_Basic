@@ -2,7 +2,7 @@
   <h1>
       {{ this.title }}
   </h1>
-  <img [src]="imgUrl" alt="The Bridgelabz Logo : a brige to employment through a lab works" />
+  <img [src]="imgUrl" (click)="OnClick($event)"  alt="The Bridgelabz Logo : a brige to employment through a lab works" />
 </div>
 
 <router-outlet></router-outlet>
